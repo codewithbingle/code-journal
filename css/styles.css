@@ -1,0 +1,84 @@
+body {
+  background-color: rgb(240 240 240);
+}
+
+label,
+button {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 900;
+}
+
+label {
+  font-size: 18px;
+}
+
+h1 {
+  font-family: "Proza Libre", sans-serif;
+}
+
+input,
+textarea {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+input {
+  border-color: rgb(236, 231, 231);
+  border-style: solid;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  font-family: "Proza Libre", sans-serif;
+  font-size: 18px;
+  background-color: #562b81;
+  color: white;
+  padding: 10px 0;
+}
+
+textarea {
+  resize: none;
+  border-width: 2px;
+  border-color: #562b81;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+}
+
+button {
+  background-color: #562b81;
+  color: white;
+  border-radius: 5px;
+  width: 70px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: rgb(166, 108, 224);
+}
+
+button:focus {
+  outline: none;
+}
+
+.entry-form-actions {
+  text-align: right;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}

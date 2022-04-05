@@ -13,11 +13,70 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
+    <div class="container">
+      <div class="row">
+        <div class="column-full">
+          Code Journal
+        </div>
+      </div>
+    </div>
   </header>
   <main>
+    <div data-view="entry-form">
+      <form id="entry-form"><div id="view-container" class="container">
+        <div class="row">
+          <div class="column-full">
+            <h1 id="entry-heading">New Entry</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-half margin-bottom-20">
+            <img src="images/placeholder-image-square.jpg" class="entry-photo border-radius pad-1-right">
+          </div>
+
+          <div class="column-half">
+            <label class="margin-bottom-10" for="entry-title">Title
+            </label>
+            <input
+              class="margin-bottom-20"
+              required
+              id="entry-title"
+              name="entry-title"
+              type="text">
+
+            <label class="margin-bottom-10" for="photoUrl">Photo URL
+            </label>
+            <input
+              class="margin-bottom-20"
+              required
+              id="photoUrl"
+              name="photoUrl"
+              type="url">
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-full">
+            <label class="margin-bottom-10" for="entry-notes">Notes</label>
+            <textarea
+              class="margin-bottom-20"
+              required
+              id="entry-notes"
+              name="entry-notes"
+              rows="6">
+            </textarea>
+            <div class="entry-form-actions">
+              <button class="margin-bottom-20 type=" submit">Save</button>
+            </div>
+          </div>
+        </div>
+      </form>
+        </div>
   </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
