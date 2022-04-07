@@ -5,7 +5,7 @@
 
 var $photoUrl = document.querySelector('#photoUrl');
 var $image = document.querySelector('.entry-photo');
-var $form = document.querySelector('form');
+var $form = document.querySelector('.container');
 
 // Event Listeners
 
@@ -21,14 +21,13 @@ $photoUrl.addEventListener('input', function (event) {
 
 $form.addEventListener('submit', function (event) {
   event.preventDefault();
-  var newEntry = {
-    title: $form.elements.title.value,
-    imageURL: $form.elements.url.value,
-    notes: $form.elements.notes.value
-  };
+  var newEntry = {};
+  newEntry.title = $form.elements.title.value;
+  newEntry.photoUrl = $form.elements.photoUrl.value;
+  newEntry.notes = $form.elements.notes.value;
   newEntry.id = data.nextEntryId;
   data.nextEntryId++;
-  data.entries.push(newEntry);
-  $image.src = 'images/placeholder-image-square.jpg';
+  data.entries.unshift(newEntry);
   $form.reset();
+  $image.src = 'images/placeholder-image-square.jpg';
 });
