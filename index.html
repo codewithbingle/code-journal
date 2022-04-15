@@ -20,34 +20,34 @@
 <body>
   <header>
     <div class="container">
-      <div class="row">
+      <div>
         <div class="column-full">
           Code Journal
+          <nav><a href="#entries">Entries</a></nav>
         </div>
       </div>
     </div>
   </header>
   <main>
-    <div data-view="entry-form">
-      <form id="entry-form" class="container">
+    <div data-view="entry-form" id="entry-form" class="view">
+      <form class="container">
+
         <div class="row">
-          <div class="column-full">
-            <h1 id="entry-heading">New Entry</h1>
-          </div>
+          <h2 class="column-full">New Entry</h2>
         </div>
+
         <div class="row">
           <div class="column-half margin-bottom-20">
-            <img src="images/placeholder-image-square.jpg" class="entry-photo border-radius pad-1-right">
+            <img src="images/placeholder-image-square.jpg" class="entry-photo border-radius pad-1-right" alt="placeholder">
           </div>
 
           <div class="column-half">
-            <label class="margin-bottom-10" for="entry-title">Title
-            </label>
+            <label class="margin-bottom-10" for="title">Title</label>
             <input
               class="margin-bottom-20"
               required
-              id="entry-title"
-              name="entry-title"
+              id="title"
+              name="title"
               type="text">
 
             <label class="margin-bottom-10" for="photoUrl">Photo URL
@@ -60,22 +60,39 @@
               type="url">
           </div>
         </div>
+
         <div class="row">
           <div class="column-full">
-            <label class="margin-bottom-10" for="entry-notes">Notes</label>
+            <label class="margin-bottom-10" for="notes">Notes</label>
             <textarea
               class="margin-bottom-20"
               required
-              id="entry-notes"
-              name="entry-notes"
+              id="notes"
+              name="notes"
               rows="6">
             </textarea>
             <div class="entry-form-actions">
-              <button class="margin-bottom-20 type=" submit">Save</button>
+              <button class="margin-bottom-20" type="submit">SAVE</button>
             </div>
           </div>
         </div>
       </form>
+    </div>
+    <div data-view="entries" id="entries" class="view hidden">
+      <div class="container">
+        <div class="row space-between">
+          <h2>Entries</h2>
+          <div>
+            <div class="new-20">
+              <div id="new-entry" class="new-entries">
+                <a href="#entry-form">NEW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul id="list-entry" class="list-entry">
+      </ul>
     </div>
   </main>
   <script src="js/data.js"></script>
