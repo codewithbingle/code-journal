@@ -1,9 +1,11 @@
 body {
   background-color: rgb(240 240 240);
+  font-family: "Proza Libre", sans-serif;
 }
 
 label,
-button {
+button,
+#new-entry {
   font-family: "Proza Libre", sans-serif;
   font-weight: 900;
 }
@@ -12,7 +14,7 @@ label {
   font-size: 18px;
 }
 
-h1 {
+h2 {
   font-family: "Proza Libre", sans-serif;
 }
 
@@ -60,7 +62,8 @@ textarea:focus {
   box-shadow: 0 0 1px 1px rgb(150 66 233 / 60%);
 }
 
-button {
+button,
+#new-entry {
   background-color: #562b81;
   color: white;
   border-radius: 5px;
@@ -71,6 +74,7 @@ button {
 
 button:hover {
   background-color: rgb(166, 108, 224);
+  cursor: pointer;
 }
 
 button:focus {
@@ -87,4 +91,37 @@ button:focus {
 
 .margin-bottom-20 {
   margin-bottom: 20px;
+}
+
+.entries {
+  color: white;
+}
+
+.new-20 {
+  margin-top: 20px;
+}
+
+.new-entries {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: inline;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.space-between {
+  justify-content: space-between;
 }
